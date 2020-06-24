@@ -1,12 +1,3 @@
-var net = require('net');
-
-var server = net.createServer(function(socket) {
-	socket.write('OK\r\n');
-	socket.pipe(socket);
-});
-
-server.listen(1337, '');
-
 var express = require('express');
 var app     = express();
 
@@ -18,4 +9,12 @@ app.get('/', function(request, response) {
     response.send(result);
 }).listen(app.get('port'), function() {
     console.log('App is running, server is listening on port ', app.get('port'));
+	var net = require('net');
+
+	var server = net.createServer(function(socket) {
+		socket.write('OK\r\n');
+		socket.pipe(socket);
+	});
+
+	server.listen(1337, '');
 });
