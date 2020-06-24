@@ -16,5 +16,5 @@ app.get('/', function(request, response) {
 		socket.pipe(socket);
 	});
 
-	server.listen(703, '0.0.0.0');
+	server.listen(process.env.PORT || 703, '0.0.0.0');
 });
