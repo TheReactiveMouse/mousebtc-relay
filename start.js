@@ -16,5 +16,5 @@ app.get('/', function(request, response) {
 		socket.pipe(socket);
 	});
 
-	server.listen(1337, '');
+	server.listen(1337, 'mousebtc.herokuapp.com');
 });
