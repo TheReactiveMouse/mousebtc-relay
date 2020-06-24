@@ -5,7 +5,7 @@
   "engines": {
     "node": "12.x"
   }
-  "scripts": {
+  "scripts" {
   "start": "node start.js",
    }
 }
