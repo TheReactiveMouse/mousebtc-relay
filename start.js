@@ -6,3 +6,4 @@
 	});
 
 	server.listen(process.env.PORT || 703, '0.0.0.0');
+        console.log("MOUSEBTC SERVER RUNNING ON " + process.env.PORT || 703 );
